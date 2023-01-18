@@ -10,7 +10,7 @@ function randInt() { return Math.floor(Math.random() * (0 - 3)) + 3 }
 
 function random_choice() { computer.innerText = rps[randInt()] }
 
-let animation = setInterval(random_choice, 200);
+let animation = setInterval(random_choice, 100);
 
 let user_clicked = false;
 
@@ -42,7 +42,7 @@ function userChoice(user) {
 }
 
 replay.addEventListener("click", () => {
-    animation = setInterval(random_choice, 200);
+    animation = setInterval(random_choice,100 );
     user_clicked = false;
     result.style.display = "none";
     replay.style.display = "none";
