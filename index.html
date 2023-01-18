@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="outfit.css">
+</head>
+
+<body>
+    <div class="title row r-center r-v-center">Rock Paper Scissors</div>
+    <div id="score" class=" row r-center r-v-center">
+        <span style="font-size:30px; margin: 1%;">🤖<span id="computerScore" style="padding:5px;">0</span></span>
+        <span style="font-size:30px; margin: 1%;">😀<span id="playerScore" style="padding:5px;">0</span></span>
+        <span style="font-size:30px; margin: 1%;">🚫<span id="draw" style="padding:5px;">0</span></span>
+    </div>
+
+    <div class="main col c-center c-space-around">
+        <div id="computer"></div>
+
+
+        <div id="player" class=" col r-center r-v-center">
+            <div id="cmd">What's Your Choice</div>
+            <div>
+                <button class="btn" onclick="userChoice(this.innerText)">🪨</button>
+                <button class="btn" onclick="userChoice(this.innerText)">🗞️</button>
+                <button class="btn" onclick="userChoice(this.innerText)">✂️</button>
+            </div>
+            <div id="result"></div>
+
+            <button id="replay">Play Again</button>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script src="magic.js"></script>
+
+</html>
