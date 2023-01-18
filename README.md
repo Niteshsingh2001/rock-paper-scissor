@@ -1,2 +1,2 @@
 # Rock Paper Scissor
-[![image](image.jpg)]
+![image](image.png)
